@@ -1,1 +1,1 @@
-web: gunicorn pwservicesinc.wsgi
+web: gunicorn pwservicesinc.wsgi --log-file -
