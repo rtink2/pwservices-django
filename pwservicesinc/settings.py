@@ -26,7 +26,9 @@ SECRET_KEY = '3*w_o^b7+%u0^=rtezu!eq^*9z&_8rswnreagm7(n8^8x#z+os'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://pwservicesinc.herokuapp.com",
+"localhost",
+"127.0.0.1"]
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
