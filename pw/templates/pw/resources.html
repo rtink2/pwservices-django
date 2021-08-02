@@ -1,0 +1,33 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid about-page resources">
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-3 col-sm-12">
+            <img src="{% static '/images/links.gif' %}" class='img-fluid' style='width: 400px; height: 300px;'>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-5 col-sm-12">
+            <a href="https://www.guardianship.org/">National Guardianship Association</a>
+            <a href="https://michiganguardianship.org/">Michigan Guardianship Association</a>
+            <a href="https://bbb.org/">Better Business Bureau</a>
+            <a href="https://www.muskegon.org/">Chamber of Commerce Greater Muskegon</a>
+            <a href="https://www.michigan.gov/mdhhs">Department of Human Services (DHS)</a>
+            <a href="https://www.ssa.gov/">Social Security Administration</a>
+            <a href="https://seniorresourceswmi.org/">Senior Resources of West Michigan</a>
+        </div>
+  
+        <div class="col-md-5 col-sm-12">
+            <p>
+                PW Services, Inc has <em>Good Standing</em> status with the Michigan Guardianship Association and
+                Tri-County Protection Team
+            </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

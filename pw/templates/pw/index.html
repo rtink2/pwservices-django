@@ -1,0 +1,75 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid page">
+    <div class="section">
+    <div class="row">
+        <div id='home'>
+            <div class="row justify-content-center">
+                <div class="row g-0">
+                    <div class="col-md-5 col-sm-12">
+                        <img src="{% static 'images/fam1.jpeg' %}" class='img-fluid'>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <p>PW Services, Inc is a private for profit corporation that was established in 1985 
+                            by the former Director of the Muskegon County Office of Public Guardian to provide
+                            guardianship and money management services for persons in the West Michigan Area.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row">
+            <div id='home2'>
+                <div class="row justify-content-center">
+                    <div class="row g-5">
+                        <div class="col-md-3 col-sm-12">
+                            <img src="{% static 'images/slider2.png' %}" class='img-fluid'>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <img src="{% static 'images/slider3.png' %}" class='img-fluid'>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <img src="{% static 'images/slider4.png' %}" class='img-fluid'>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <img src="{% static 'images/slider5.png' %}" class='img-fluid'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row">
+            <div id='home3'>
+                <div class="row justify-content-center">
+                    <div class="row g-5">
+                        <div class="col-md-7 col-sm-12">
+                                <h5>Contact Information</h5>
+                                <hr />
+                                <p>
+                                    <span>PW Services, Inc</span><br />
+                                    <span>PO Box 1515</span><br />
+                                    <span>Muskegon MI 49443</span><br />
+                                    <span>Phone: (231) 728-1102</span><br />
+                                    <span>Fax:   (231) 722-9478</span><br />
+                                    <span>E-Mail: rachel@pwservicesinc.com</span>
+                                </p>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                                <a href="https://www.bbb.org/search?find_country=USA&find_latlng=43.196404%2C-86.272280&find_loc=Roosevelt%20Park%2C%20MI&find_text=PW%20Services%20Inc&page=1&touched=1">
+                                    <img src="{% static 'images/bbb.png' %}" class="img-fluid">
+                                </a>
+                        </div>
+                  </div> 
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

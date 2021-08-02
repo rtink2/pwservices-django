@@ -1,0 +1,41 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid page about-page">
+    <section>
+        <div class="row">
+            <div class="row justify-content-center mt-3">
+                <h1 class='text-center mb-5'>CONSULTATION</h1>
+                <div class="col-md-4 col-sm-12">
+                    <img src="{% static 'images/consult.png' %}" class='img-fluid'>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-12 col-sm-12">
+                <h2>Cost of Service</h2>
+                <p>
+                    Fees for services are assessed to the client's account either as private pay status or according to
+                    guidelines set by agencies such as the Social Security Administration, Vetrans Administration, or
+                    other social services agencies.
+                </p>
+            </div>
+            <div class="row justify-content-center mt-3 mb-5">
+                <div class="col-md-4 col-sm-12">
+                    <img src="{% static 'images/consult1.png' %}" class='img-fluid'>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 mb-5">
+                <h2>Initial Consultation</h2>
+                <p style='margin-bottom: 400px;'>
+                    Initial 30 minute consultation for Guardianship or Conservatorship services free of charge.
+                </p>
+            </div>
+        </div>
+    <section>
+
+    </section>
+</div>
+{% endblock content %}

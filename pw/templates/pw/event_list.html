@@ -1,0 +1,15 @@
+{% extends 'landing/base.html' %}
+
+{% block content %}
+    {% for event in event_list %}
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-5 col-sm-12 border-bottom">
+                <div class='body'>
+                    <a href="{% url 'event_detail' event.pk %}">{{ event.title }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,162 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+
+nav .navbar-nav li a {
+    color: black;
+    }
+
+.navbar-brand {
+    color: black;
+}
+
+.body a {
+	text-decoration: none;
+    color: #215f00;
+}
+
+.body a:hover {
+    text-decoration: none;
+    color: #88883e;
+}
+
+.page {
+    background: #215f00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e4e4d9, #215f00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.about-page p {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1em;
+}
+
+.process-page p {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1em;
+}
+
+.resources a {
+    font-size: 1.5em;
+}
+
+#home p {
+    font-family: 'Amita', cursive;
+    font-size: 2em;
+    padding-left: 1.5em;
+}
+
+.edit-color {
+    color: #12FB05;
+    width: 1.2em;
+    transition: all .2s ease-in-out;
+}
+
+.edit-color:hover {
+    color: #8DFB05;
+    transform: scale(1.5);
+}
+
+.delete-color {
+    color: #CA0734;
+    transition: all .2s ease-in-out;
+    width: 1.2em;
+}
+
+.delete-color:hover {
+    color: #F71C05;
+    transform: scale(1.5);
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.5);
+}
+
+footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background: #215f00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #215f00, #e4e4d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #215f00, #e4e4d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (max-width: 375px){
+    footer {
+        position:fixed;
+        left:0;
+        bottom:0;
+        width:100%;
+        background: #215f00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #215f00, #e4e4d9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #215f00, #e4e4d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+}
+
+footer a {
+    color: black;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+    font-size: xx-large;
+    font-family: 'Amita', cursive;
+    background: #215f00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #215f00, #e4e4d9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #215f00, #e4e4d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    color: whitesmoke;
+    transform: rotateY(180deg);
+    background: #215f00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e4e4d9, #215f00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+

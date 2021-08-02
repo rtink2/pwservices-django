@@ -1,0 +1,41 @@
+{% extends 'landing/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-md-5 col-sm-6">
+            <a href="{% url 'event_list' %}" class="btn btn-light">Back To Events</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5 col-sm-12 border-bottom">
+            <div class='body'>
+                <p>Title: {{ event.title }}</p>
+                <p>Event: {{ event.body }}</p>
+                <p>Date: {{ event.event_date }}</p>
+                <p>Time: {{ event.event_time }}</p>
+                <p>Street: {{ event.street }}</p>
+                <p>City: {{ event.city }}</p>
+                <p>State: {{ event.state }}</p>
+                <p>Zip Code: {{ event.zip_code }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if request.user.is_staff %}
+<div class="container-fluid event-btn">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5 col-sm-12">
+            <a href="{% url 'event_edit' event.pk %}" class="edit-color"><i class="far fa-edit grow"></i></a>
+            <a href="{% url 'event_delete' event.pk %}" class="delete-color"><i class="fas fa-trash grow"></i></a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock content %}
