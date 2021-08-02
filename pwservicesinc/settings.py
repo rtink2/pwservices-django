@@ -158,7 +158,3 @@ LOGIN_REDIRECT_URL = 'event_list'
 PHONENUMBER_DEFAULT_REGIOIN='US'
 PHONENUMBER_DEFAULT_FORMAT= 'E164'
 TIME_INPUT_FORMATS = ('%I:%M %p',)
-
-# Activate Django-Heroku.
-import django_heroku
-django_heroku.settings(locals())
