@@ -26,10 +26,11 @@ class ContactForm(forms.ModelForm):
     first_name = forms.CharField(max_length=150)
     last_name = forms.CharField(max_length=150)
     email = forms.EmailField(max_length=150)
-    phone = PhoneNumberField(
-        widget=PhoneNumberPrefixWidget(attrs={'placeholder': ('8883459876')}),
-        label=('Phone Number')
-    )
+    # phone = PhoneNumberField(
+    #     widget=PhoneNumberPrefixWidget(attrs={'placeholder': ('8883459876')}),
+    #     label=('Phone Number')
+    # )
+    phone = PhoneNumberField()
     message = forms.CharField(
         label='',
         widget=forms.Textarea(attrs={
