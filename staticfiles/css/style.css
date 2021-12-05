@@ -2,19 +2,18 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    height: 100%;
     margin: 0;
     padding: 0;
   }
 
 
-nav .navbar-nav li a {
+/* nav .navbar-nav li a {
     color: black;
-    }
+    } */
 
-.navbar-brand {
+/* .navbar-brand {
     color: black;
-}
+} */
 
 .body a {
 	text-decoration: none;
@@ -30,25 +29,11 @@ nav .navbar-nav li a {
     background: #215f00; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #e4e4d9, #215f00);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    -webkit-background-repeat: no-repeat;
-    -moz-background-repeat: no-repeat;
-    -o-background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
-
 }
 
 .about-page p {
     font-family: 'Sansita Swashed', cursive;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .process-page p {
@@ -175,3 +160,18 @@ footer a {
     background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+  #topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+}
+
+#topheader .navbar-nav li > a:hover, :focus {
+    background-color: #333;
+	color: #fff;
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}

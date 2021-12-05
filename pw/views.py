@@ -72,10 +72,11 @@ class EventListView(View):
 
 class EventDetailView(DetailView):
     model = Event
+    template_name = 'pw/event_detail.html'
 
 class EventEditView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Event
-    fields = ['title', 'body', 'event_date', 'street', 'city', 'state', 'zip_code']
+    fields = ['title', 'body', 'event_date', 'street', 'city', 'state', 'zip_code', 'website']
     template_name = 'pw/event_edit.html'
 
     def get_successUrl(self):

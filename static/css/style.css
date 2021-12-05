@@ -7,15 +7,15 @@ html, body {
   }
 
 
-nav .navbar-nav li a {
+/* nav .navbar-nav li a {
     color: black;
-    }
+    } */
 
-.navbar-brand {
+/* .navbar-brand {
     color: black;
-}
+} */
 
-.body a {
+/* .body a {
 	text-decoration: none;
     color: #215f00;
 }
@@ -23,7 +23,7 @@ nav .navbar-nav li a {
 .body a:hover {
     text-decoration: none;
     color: #88883e;
-}
+} */
 
 .page {
     background: #215f00; /* fallback for old browsers */
@@ -160,3 +160,18 @@ footer a {
     background: linear-gradient(to right, #e4e4d9, #215f00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+#topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+}
+
+#topheader .navbar-nav li > a:hover, li > a:focus {
+    background-color: #215f00;
+	color: #e4e4d9;
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #215f00;
+	color: #e4e4d9;
+}

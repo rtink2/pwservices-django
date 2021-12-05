@@ -17,10 +17,11 @@ class EventForm(forms.ModelForm):
     city = forms.TextInput()
     state = forms.TextInput()
     zip_code = forms.IntegerField()
+    website = forms.URLInput()
 
     class Meta:
         model = Event
-        fields = ['title', 'body', 'event_date', 'event_time', 'street', 'city', 'state', 'zip_code']
+        fields = ['title', 'body', 'event_date', 'event_time', 'street', 'city', 'state', 'zip_code', 'website']
 
 class ContactForm(forms.ModelForm):
     first_name = forms.CharField(max_length=150)

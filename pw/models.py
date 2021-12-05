@@ -13,6 +13,7 @@ class Event(models.Model):
     zip_code = models.IntegerField(blank=True, null=True)
     created_on = models.DateTimeField(auto_now=False, auto_now_add=True)
     slug = models.SlugField(blank=True, null=True)
+    website = models.URLField(max_length=250, blank=True, default='')
 
     class Meta:
         ordering = ['event_date']
