@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'phone_field',
     'phonenumber_field',
+    'phonenumbers',
     'active_link',
     'whitenoise.runserver_nostatic',
     
